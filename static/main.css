@@ -1171,3 +1171,93 @@ span.avatar-name {
 .progressive-content.loaded {
     opacity: 1;
 }
+
+/* 视频播放器样式 */
+.video-player-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: var(--heo-card-bg);
+  border-radius: 12px;
+  box-shadow: var(--heo-shadow-lightblack);
+}
+
+.video-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--heo-fontcolor);
+}
+
+.video-description {
+  color: var(--heo-secondtext);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 比例 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.main-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .video-player-container {
+    padding: 0.5rem;
+  }
+  
+  .video-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* 调整视频列表项样式 */
+.group-item a.title {
+  display: flex;
+  align-items: center;
+}
+
+.group-item .group-item-icon {
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.group-item .group-item-icon:hover {
+  transform: scale(1.03);
+}
+
+/* 视频播放按钮样式 */
+.video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.video-play-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) scale(1.1);
+}

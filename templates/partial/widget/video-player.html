@@ -1,0 +1,16 @@
+{# video_url #}
+{# title #}
+{# description #}
+{# poster #}
+{% macro video_player(title, video_url, description, poster) %}
+<div class="video-player-container" id="video-{{ title | replace(from=" ", to="-") | lower }}">
+  <h2 class="video-title">{{ title | safe }}</h2>
+  {% if description %}<p class="video-description">{{ description | safe }}</p>{% endif %}
+  <div class="video-wrapper">
+    <video controls preload="metadata" class="main-video" {% if poster %}poster="{{ poster }}"{% endif %}>
+      <source src="{{ video_url | safe }}" type="video/mp4">
+      您的浏览器不支持HTML5视频播放。
+    </video>
+  </div>
+</div>
+{% endmacro %} 

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% import "partial/widget/video-player.html" as video_player_macro %}
+
+{% block content %}
+<div class="video-page need-padding">
+  {{ video_player_macro::video_player(
+    title=page.title,
+    description=page.description,
+    video_url=page.extra.video_url,
+    poster=page.extra.poster | default(value="")
+  ) }}
+  
+  <div class="content">
+    {{ page.content | safe }}
+  </div>
+  
+  <div class="back-to-home">
+    <a href="/" class="primary-button">返回首页</a>
+  </div>
+</div>
+{% endblock content %} 

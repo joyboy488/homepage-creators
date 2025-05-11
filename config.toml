@@ -1,11 +1,11 @@
 # The URL the site will be built for
-base_url = "https://jiaxiang.wang"
+base_url = "/"
 
-title = "个人主页"
+title = "视频作品集展示"
 
-author = "王嘉祥"
+author = "作品集创作者"
 
-description = "好奇、探索、创造。个人主页导航网站。"
+description = "展示个人视频和图片作品的作品集网站"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
@@ -28,13 +28,13 @@ logo = "/img/logo.webp"
 # default to use logo value
 nav_logo = "/img/logo.webp"
 # 联系邮箱
-mail = "contact@example.com"
+mail = "1@1.com"
 # ICP 备案号
-compliance_icp = "ICP备XXXXXXXX号"
+compliance_icp = ""
 # 公安备案号
-compliance_security = "公网安备0000000000号"
+compliance_security = ""
 # 公安备案链接
-compliance_security_link = "https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=0000000000"
+compliance_security_link = ""
 
 
 # umami 访问量统计
@@ -43,34 +43,30 @@ enable = false
 # 生效的域名，避免被 localhost 统计
 domain = "example.com"
 # 自己的umami服务地址
-remote_url = "https://umami-api"
-#remote_url = "https://umami-wangjiaxiang-d12g.netlify.app"
+remote_url = ""
 # 网站id
-id = "5c123448-a501-444c-830a-e55df930cd4a"
+id = ""
 # js 加载地址
-js = "/path/to/script.js"
+js = ""
 
 [extra.nav]
 
 [extra.nav.message]
 enable = true
 # support inline html
-text = "🎉 访问作者博客"
-url = "https://blog.jiaxiang.wang"
+text = "🎉 欢迎访问我的作品集"
+url = "#"
 
 [extra.nav.center]
 menus = [
-    { name = "主页", url = "主页", internal = true},
-    { name = "主题", url = "主题", internal = true},
-    { name = "博客", url = "博客", internal = true},
-    { name = "媒体", url = "媒体", internal = true},
-    { name = "项目", url = "https://blog.jiaxiang.wang/tags/project/", internal = false},
+    { name = "首页", url = "/", internal = true},
+    { name = "视频作品", url = "#ai-urban-speed", internal = true},
+    { name = "关于我", url = "/about", internal = true},
 ]
 
 [extra.nav.right]
 menus = [
-    { name = "作者博客", url = "https://blog.jiaxiang.wang", internal = false},
-    { name = "作者 Github", url = "https://github.com/iWangJiaxiang", internal = false},
+    { name = "联系方式", url = "#contact", internal = true},
 ]
 
 # 其他设置
@@ -82,152 +78,95 @@ avif_enable = true
 [[extra.index.widgets]]
 type = "header"
 [extra.index.widgets.value]
-title_1 = "王嘉祥"
-title_2 = "Jiaxiang Wang"
-bio_1 = "专注于科技、音乐等领域<span class=\"inline-word\">跨界创新</span>"
-bio_2 = "分享经验与见解"
-about_url = "https://blog.jiaxiang.wang/about/"
+title_1 = "王嘉鑫"
+title_2 = "作品集"
+bio_1 = "四川大学建模专业，探索AIGC与视觉艺术的融合"
+bio_2 = ""
+about_url = "/about"
 cover = "/img/logo.svg"
 [[extra.index.widgets.value.links]]
-class_icon = " icon-github-line"
-url = "https://github.com/iWangJiaxiang"
+class_icon = " icon-douyin-line"
+url = "https://v.douyin.com/hH4_ujBDDgE/"
 [[extra.index.widgets.value.links]]
-class_icon = " icon-github-line"
-url = "https://github.com/iWangJiaxiang"
+class_icon = " icon-mail-line"
+url = "mailto:1@1.com"
 
 
 [[extra.index.widgets]]
 type = "author"
 [extra.index.widgets.value]
-name = "王嘉祥"
+name = "王嘉鑫"
 avatar = "/img/logo01.webp"
-title = "Team leader, architect,"
-# title = "Team leader, architect, senior engineer, singer songwriter, creator. Engaging in HPC, Cloud, AI and more."
-bio = "“专注于科技、音乐等领域跨界创新，分享经验与见解”“专注于科技、音乐等领域跨界创新，分享经验与见解”“专注于科技、音乐等领域跨界创新，分享经验与见解”“专注于科技、音乐等领域跨界创新，分享经验与见解”“专注于科技、音乐等领域跨界创新，分享经验与见解”“专注于科技、音乐等领域跨界创新，分享经验与见解”“专注于科技、音乐等领域跨界创新，分享经验与见解”“专注于科技、音乐等领域跨界创新，分享经验与见解”"
-
-
-[[extra.index.widgets]]
-type = "product-single"
-[extra.index.widgets.value]
-tip = "主页"
-title = "个人主页<br>正式开源"
-bio_1 = "像本页面一样，呈现美轮美奂<span class=\"inline-word\">效果</span>"
-bio_2 = "轻松配置，快速构建你的<span class=\"inline-word\">个人主页</span>"
-img = "/img/homepage-single.avif"
-[[extra.index.widgets.value.links]]
-class = "primary-button"
-url = "https://github.com/iWangJiaxiang/Homepage-Creators"
-name = "立刻获取源代码"
-[[extra.index.widgets.value.links]]
-class = "second-link"
-url = "https://github.com/iWangJiaxiang"
-name = "开发者主页"
-
-
-[[extra.index.widgets]]
-type = "event"
-[extra.index.widgets.value]
-tip = "大事件"
-title = "王嘉祥博客主题<br>正式开源！"
-bio = "一个为创作者而构建的主题，0成本、0运维开始你的博客生涯，与各位优秀博主一同进步！"
-button = "立刻获取源代码"
-note = "基于 Zola 构建"
-url = "https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang"
-img = "/img/blog-event.avif"
-
-
-[[extra.index.widgets]]
-type = "product-single"
-[extra.index.widgets.value]
-tip = "博客"
-title = "新奇的事物<br>有趣的思想"
-bio_1 = "备受喜爱的知识共享<span class=\"inline-word\">博客</span>"
-bio_2 = "已帮助数百万互联网使用者更好的探索数字<span class=\"inline-word\">世界</span>"
-img = "/img/blog.avif"
-style = "background-image: linear-gradient(180deg, #830FC1 0%, #3D00A0 100%);"
-[[extra.index.widgets.value.links]]
-class = "primary-button"
-url = "https://blog.jiaxiang.wang/"
-name = "访问博客"
-[[extra.index.widgets.value.links]]
-class = "second-link"
-url = "https://blog.jiaxiang.wang/articles/misc/from-0-to-1-the-blog-review/"
-name = "创站故事"
+title = "建模师, AIGC探索者"
+bio = "王嘉鑫，21岁，四川大学建模专业在读。凭借扎实的艺术功底与对前沿技术的敏锐洞察，我不仅精通传统建模技法，更在AIGC领域积极探索，致力于将AI的无限可能融入视觉创作。我的作品力求在技术与艺术间取得完美平衡，探索叙事与视觉表达的新疆界。"
 
 
 [[extra.index.widgets]]
 type = "product-list"
 [extra.index.widgets.value]
-title = "媒体"
-bio = "为互联网共享精神添砖加瓦"
+title = "AI探索都市与速度"
+bio = ""
+id = "ai-urban-speed"
 [[extra.index.widgets.value.items]]
-logo = "/img/internet.svg"
-title = "个人博客"
-bio = "专注于科技、音乐等领域跨界创新，分享经验与见解"
-url = "https://blog.jiaxiang.wang/"
-button = "访问"
+logo = "/img/video-icon.svg"
+title = "霓虹舞者 · Neon Dancer"
+bio = "白色高尔夫在夜色与霓虹中翩然疾行，仿佛城市的舞者。"
+url = "/videos/neon-dancer"
+button = "观看视频"
 [[extra.index.widgets.value.items]]
-logo = "/img/afdian.png"
-title = "爱发电"
-bio = "分享有趣又有料的文章与资源"
-url = "https://afdian.com/a/wangjiaxiang"
-button = "访问"
-note = "订阅制"
-new = true
+logo = "/img/video-icon.svg"
+title = "暗影冲刺 · Shadow Sprint"
+bio = "低调隐匿于夜幕，却一触即发，黑暗中的速度之美。"
+url = "/videos/shadow-sprint"
+button = "观看视频"
 [[extra.index.widgets.value.items]]
-logo = "/img/wechat.svg"
-title = "公众号"
-bio = "第一时间获取动态"
-url = "https://blog.jiaxiang.wang/wechat"
-button = "访问"
-hot = true
+logo = "/img/video-icon.svg"
+title = "夕阳回声·AE86 · Sunset Echo: AE86"
+bio = "经典AE86在落日余晖下，唤起油门与回忆的共鸣。"
+url = "/videos/sunset-echo-ae86"
+button = "观看视频"
 [[extra.index.widgets.value.items]]
-logo = "/img/follow.svg"
-title = "Follow"
-bio = "一站式获取文章订阅"
-url = "https://app.follow.is/share/feeds/89889813571729408"
-button = "访问"
-new = true
-
-
-[[extra.index.widgets]]
-type = "product-single"
-[extra.index.widgets.value]
-tip = "主题"
-title = "博客主题<br>开源共享"
-bio_1 = "0成本0运维搭建属于你的<span class=\"inline-word\">博客站点</span>"
-bio_2 = "进入创作分享的<span class=\"inline-word\">博客世界</span>"
-img = "/img/theme-single.avif"
-style = "background-image: linear-gradient(180deg, #0F6AC1 0%, #002EA0 100%);"
-style_tip = "color: white; opacity: 0.6;"
-[[extra.index.widgets.value.links]]
-class = "primary-button"
-url = "https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang"
-name = "访问项目"
-[[extra.index.widgets.value.links]]
-class = "second-link"
-url = "https://theme.jiaxiang.wang/"
-name = "访问演示站点"
-
+logo = "/img/video-icon.svg"
+title = "暮光展翅·WRX · Dusk Wings: WRX"
+bio = "湛蓝战鹰在暮色中腾飞，风与光谱写速度的诗。"
+url = "/videos/dusk-wings-wrx"
+button = "观看视频"
 
 [[extra.index.widgets]]
 type = "product-list"
 [extra.index.widgets.value]
-title = "主题"
-bio = "帮助更多用户构建出非凡的网站"
+title = "ComfyUI商业应用项目"
+bio = "探索ComfyUI在商业项目中的实际应用与创新实践。"
+id = "comfyui-projects"
 [[extra.index.widgets.value.items]]
-logo = "/img/internet.svg"
-title = "Jiaiang.Wang"
-bio = "纯静态个人博客主题 (Zola)"
-url = "https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang"
-button = "访问"
-note = "本人博客主题"
-hot = true
+logo = "/img/image-icon.svg"
+title = "万物迁移"
+bio = ""
+url = "/projects/wanwu"
+button = "查看详情"
 [[extra.index.widgets.value.items]]
-logo = "/img/internet.svg"
-title = "Homepage Creators"
-bio = "纯静态个人主页主题 (Zola)"
-url = "https://github.com/iWangJiaxiang/Homepage-Creators"
-button = "访问"
-note = "本站主题"
-new = true
+logo = "/img/image-icon.svg"
+title = "小红书网图风格化"
+bio = ""
+url = "/projects/xiaohongshu"
+button = "查看详情"
+
+[[extra.index.widgets]]
+type = "author"
+[extra.index.widgets.value]
+name = "关于我"
+avatar = "/img/logo01.webp"
+title = "视频创作者 & 摄影师"
+bio = "我是一名热爱视觉艺术的创作者，专注于视频制作和摄影。通过镜头，我尝试捕捉生活中的美丽瞬间，记录大自然的壮丽景色和城市的现代魅力。我的作品致力于通过视觉语言传达情感和故事，希望能够引起观众的共鸣。如果你喜欢我的作品，或者有意向合作，请随时与我联系。"
+id = "contact"
+
+[[extra.index.widgets]]
+type = "footer"
+[extra.index.widgets.value]
+title = "联系方式"
+bio = "如果您对我的作品感兴趣或希望合作，请随时联系我"
+contacts = [
+    { icon = "icon-mail-line", name = "邮箱", text = "contact@example.com" },
+    { icon = "icon-wechat-line", name = "微信", text = "WeChat_ID" },
+    { icon = "icon-instagram-line", name = "Instagram", text = "instagram_id", url = "https://instagram.com/" },
+]
