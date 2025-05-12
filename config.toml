@@ -86,7 +86,7 @@ about_url = "/about"
 cover = "/img/logo.svg"
 [[extra.index.widgets.value.links]]
 class_icon = " icon-douyin-line"
-url = "https://v.douyin.com/hH4_ujBDDgE/"
+url = "https://www.xiaohongshu.com/user/profile/589d231ffb68a2303625254e?xsec_token=YB5rxxcQvvz1uHlebUQFhVuSjgLobHiQ5jDLGAkaQeGHw=&xsec_source=app_share&xhsshare=WeixinSession&appuid=589d231ffb68a2303625254e&apptime=1747051075&share_id=4598da0bb65544c99ccaca25cbb7ce52&wechatWid=a160475f5ea9777c8314494e0c3e22dc&wechatOrigin=menu"
 [[extra.index.widgets.value.links]]
 class_icon = " icon-mail-line"
 url = "mailto:1@1.com"
