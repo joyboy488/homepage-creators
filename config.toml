@@ -3,7 +3,7 @@ base_url = "/"
 
 title = "视频作品集展示"
 
-author = "作品集创作者"
+author = "王嘉鑫"
 
 description = "展示个人视频和图片作品的作品集网站"
 
@@ -80,7 +80,7 @@ type = "header"
 [extra.index.widgets.value]
 title_1 = "王嘉鑫"
 title_2 = "作品集"
-bio_1 = "四川大学建模专业，探索AIGC与视觉艺术的融合"
+bio_1 = "四川大学锦江学院数字媒体艺术专业，AIGC设计师"
 bio_2 = ""
 about_url = "/about"
 cover = "/img/logo.svg"
@@ -89,7 +89,7 @@ class_icon = " icon-douyin-line"
 url = "https://www.xiaohongshu.com/user/profile/589d231ffb68a2303625254e?xsec_token=YB5rxxcQvvz1uHlebUQFhVuSjgLobHiQ5jDLGAkaQeGHw=&xsec_source=app_share&xhsshare=WeixinSession&appuid=589d231ffb68a2303625254e&apptime=1747051075&share_id=4598da0bb65544c99ccaca25cbb7ce52&wechatWid=a160475f5ea9777c8314494e0c3e22dc&wechatOrigin=menu"
 [[extra.index.widgets.value.links]]
 class_icon = " icon-mail-line"
-url = "mailto:1@1.com"
+url = "mailto:xjjxhdbshsjsj@outlook"
 
 
 [[extra.index.widgets]]
@@ -97,8 +97,8 @@ type = "author"
 [extra.index.widgets.value]
 name = "王嘉鑫"
 avatar = "/img/logo01.webp"
-title = "建模师, AIGC探索者"
-bio = "王嘉鑫，21岁，四川大学建模专业在读。凭借扎实的艺术功底与对前沿技术的敏锐洞察，我不仅精通传统建模技法，更在AIGC领域积极探索，致力于将AI的无限可能融入视觉创作。我的作品力求在技术与艺术间取得完美平衡，探索叙事与视觉表达的新疆界。"
+title = "AIGC设计师"
+bio = "王嘉鑫，21岁，四川大学锦江学院数字媒体艺术专业在读。深入研究AIGC生成艺术，掌握Stable Diffusion、ComfyUI进行文生图、图生图，以及使用即梦、可灵、studio 2进行图生视频、文生视频生成。具备AI生成+人工优化能力，结合Photoshop进行后期调整，能够将AI技术应用于游戏美术领域，提高作品质量与商业化适配度。"
 
 
 [[extra.index.widgets]]
@@ -166,7 +166,7 @@ type = "footer"
 title = "联系方式"
 bio = "如果您对我的作品感兴趣或希望合作，请随时联系我"
 contacts = [
-    { icon = "icon-mail-line", name = "邮箱", text = "contact@example.com" },
-    { icon = "icon-wechat-line", name = "微信", text = "WeChat_ID" },
+    { icon = "icon-mail-line", name = "邮箱", text = "xjjxhdbshsjsj@outlook" },
+    { icon = "icon-phone-line", name = "电话", text = "19960795929" },
     { icon = "icon-instagram-line", name = "Instagram", text = "instagram_id", url = "https://instagram.com/" },
 ]
